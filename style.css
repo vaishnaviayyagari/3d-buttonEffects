@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.buttons {
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.buttons .row button {
+    font-size: 20px;
+    display: block;
+    height: 55px;
+    width: 150px;
+    margin: 40px 0;
+    font-weight: 500;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.4);
+    cursor: pointer;
+    border: none;
+    outline:none;
+    color: #fff;
+    position: relative;
+    border-radius: 0 5px 5px 0;
+    transition: all 0s ease ease-out;
+}
+.row button.facebook,.row button.facebook span {
+    background: #3b5999;
+    border-left: 1px solid #2e4476;
+    box-shadow: 0px 5px 0 0 #2e4476;
+}
+.row button.facebook:active {
+     box-shadow: 0 2px 0  0 #2e4476;
+}
+.row button:active {
+   top: 3px;
+}
+.row button.twitter,.row button.twitter span {
+    background: #46c1f6;
+    border-left: 1px solid #269bd0;
+    box-shadow: 0px 5px 0 0 #269bd0;
+}
+.row button.twitter:active {
+    box-shadow: 0px 5px 0 0 #269bd0;
+}
+.row button.instagram , .row button.instagram span {
+    background: #e1306c;
+    border-left: 1px solid #c91d56;
+    box-shadow: 0px 5px 0 0 #c91d56;
+}
+.row button.youtube,.row button.youtube span {
+    background: #de463b;
+    border-left: 1px solid #c02b21;
+    box-shadow: 0px 5px 0 0 #c02b21;
+}
+.row button.youtube:active {
+    box-shadow: 5px 5px 0 0 #c02b21;
+}
+.row button span {
+    position: absolute;
+    height: 55px;
+    left: 0px;
+    width: 60px;
+    left: -62px;
+    top: 0;
+    line-height: 55px;
+    font-size: 25px;
+    display: block;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+}
+.row button:active span {
+    top:-5px;
+}
